@@ -1,8 +1,164 @@
 :root{
-    --regular-green: #00ad6a;
-    --light-blue: #eafaf1;
-    --light-green: #1fe374;
-    --regular-dark: #080c16;
-    --regular-grey: #d6dae5;
+    --green-1: #eafaf1;
+    --green-2: #1fe374;
+    --green-3: #00ad6a;
     --regular-white: #fcfcfc;
+    --regular-grey: #d6dae5;
+    --regular-dark: #080c16;
+    --width: 1200px
 }
+
+body{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--regular-dark);
+}
+
+/* HEADER */
+.header{
+    background-color: var(--green-1);
+    padding: 3em 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--width);
+    margin: 0 auto;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navlink{
+    color: var(--green-3);
+    font-weight: 600;
+}
+
+.active{
+    color: var(--regular-dark);
+}
+
+.navlink:hover{
+    color: var(--regular-dark);
+    cursor: pointer;
+}
+
+.btn-outline-primary{
+    border: 2px solid var(--green-3);
+    padding: .5em 1.2em;
+    color: var(--green-3);
+    font-weight: 600;
+}
+
+/* MAIN */
+/* TITLE */
+.pricing-testimonial{
+    padding-bottom: 6rem;
+    background-color: var(--green-1);
+    border-bottom: 1px solid var(--regular-grey);
+}
+
+.pricing-title{
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+}
+
+.pricing-title > h1{
+    font-size: 3rem;
+    padding: 0 2.5em;
+}
+
+.pricing-title > p{
+    font-size: 1.5rem;
+}
+
+/* MAIN */
+/* TESTIMONIAL */
+.testimonial{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.testimonial > blockquote{
+    font-size: 2rem;
+}
+
+.testimonial > cite{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--green-3);
+}
+
+/* FOOTER */
+.footer{
+    background-color: var(--regular-dark);
+}
+
+.footer > .footer-content,
+.footer > p{
+    max-width: var(--width);
+    margin:0 auto;
+}
+
+.footer > p, .footer > p > a{
+    color: var(--regular-grey);
+    font-size: .85rem;
+}
+
+.footer > p > a{
+    text-decoration: underline;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 0;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-left > a{
+    display: block;
+}
+.btn-regular-primary{
+    background-color: var(--green-3);
+    padding: 1em 2em;
+    font-weight: 600;
+}
+
+.footer-right{
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-menu > h5{
+    color: var(--regular-white);
+}
+
+.footer-menu > ul > li > a{
+    color: var(--green-2);
+}
+
