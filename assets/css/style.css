@@ -108,6 +108,36 @@ a{
     color: var(--green-3);
 }
 
+/* MAIN */
+/* FAQ */
+.faq{
+    margin: 0 auto;
+    max-width: var(--width);
+    padding: 6em 4em;
+}
+
+.faq-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem 1rem;
+}
+
+.faq-item{
+    width: calc(50% - 1rem);
+}
+
+.faq-question{
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.15;
+}
+    
+.faq-answer{
+    margin: 0 auto;
+    font-size: 1.125rem;
+}
+
 /* FOOTER */
 .footer{
     background-color: var(--regular-dark);
