@@ -71,11 +71,13 @@ a{
     padding: .5em 1.2em;
     color: var(--green-3);
     font-weight: 600;
+    display: inline-block;
+    transition: all .3s;
 }
 
 .btn-outline-primary:hover{
-    /* box-shadow: 0 0 var(--green-3); */
-    transform: translate3d(.5rem, .5rem, 0);
+    box-shadow: -5px 5px var(--green-3);
+    transform: translate(5px, -5px);
 }
 
 /* MAIN */
@@ -185,10 +187,18 @@ a{
 .footer-left > a{
     display: block;
 }
+
 .btn-regular-primary{
     background-color: var(--green-3);
     padding: 1em 2em;
     font-weight: 600;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.btn-regular-primary:hover{
+    box-shadow: -5px 5px var(--regular-grey);
+    transform: translate(5px, -5px);
 }
 
 .footer-right{
