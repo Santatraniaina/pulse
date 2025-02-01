@@ -10,7 +10,9 @@
     --regular-white: #fcfcfc;
     --regular-grey: #d6dae5;
     --regular-dark: #080c16;
-    --width: 1200px
+    --width: 1200px;
+
+    --card-radius: .5rem;
 }
 
 body{
@@ -102,6 +104,66 @@ a{
 
 .pricing-title > p{
     font-size: 1.5rem;
+}
+
+
+/* MAIN */
+/* PRICING PLAN */
+.pricing-plan{
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--width);
+    margin: 0 auto;
+    padding: 6em 0;
+    gap: 2rem;
+}
+
+.pricing-plan-card{
+    background-color: var(--regular-white);
+    border: 1px solid var(--green-3);
+    text-align: center;
+    max-width: calc((100% / 3) - 2rem);
+}
+
+.card-header{
+    background-color: var(--green-3);
+    color: var(--regular-white);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: .4rem 0;
+}
+
+.pricing-plan-card, .card-header{
+    border-top-left-radius: var(--card-radius);
+    border-top-right-radius: var(--card-radius);
+}
+
+.card-body{
+    padding: 3rem 2rem;
+}
+
+.pricing-plan-title{
+    color: var(--green-3);
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.pricing-plan-title > .price{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--regular-grey);
+    font-weight: lighter;
+}
+
+.btn-primary{
+    background-color: var(--green-2);
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--regular-dark);
+    border: none;
+    margin: 1rem auto;
 }
 
 /* MAIN */
