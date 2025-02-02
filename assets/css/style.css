@@ -166,6 +166,22 @@ a{
     margin: 1rem auto;
 }
 
+.features-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.pricing-plan-features {
+    text-align: left;
+}
+
+.pricing-plan-feature-item.checked{
+    list-style: url('../icons/icon-check-bullet.svg');
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
 /* MAIN */
 /* TESTIMONIAL */
 .testimonial{
