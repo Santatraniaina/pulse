@@ -9,6 +9,7 @@
     --green-3: #00ad6a;
     --regular-white: #fcfcfc;
     --regular-grey: #d6dae5;
+    --dark-grey: #83858a;
     --regular-dark: #080c16;
     --width: 1200px;
 
@@ -152,7 +153,7 @@ a{
 .pricing-plan-title > .price{
     display: block;
     font-size: 1.5rem;
-    color: var(--regular-grey);
+    color: var(--dark-grey);
     font-weight: lighter;
 }
 
@@ -164,6 +165,22 @@ a{
     color: var(--regular-dark);
     border: none;
     margin: 1rem auto;
+}
+
+.features-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.pricing-plan-features {
+    text-align: left;
+}
+
+.pricing-plan-feature-item.checked{
+    list-style: url('../icons/icon-check-bullet.svg');
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
 }
 
 /* MAIN */
