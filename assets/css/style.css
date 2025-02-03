@@ -113,17 +113,21 @@ a{
 .pricing-plan{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: var(--width);
     margin: 0 auto;
     padding: 6em 0;
     gap: 2rem;
 }
 
+.pricing-plan > article{
+    max-width: calc((100vw / 3) - 2rem);
+}
+
 .pricing-plan-card{
     background-color: var(--regular-white);
     border: 1px solid var(--green-3);
     text-align: center;
-    max-width: calc((100% / 3) - 2rem);
 }
 
 .card-header{
@@ -181,6 +185,31 @@ a{
     list-style: url('../icons/icon-check-bullet.svg');
     margin-bottom: 1.5rem;
     line-height: 1.5;
+}
+
+
+article.disabled{
+    background-color: transparent;
+    border: none;
+    padding: 3rem 2rem;
+    text-align: left;
+}
+
+article.disabled > .pricing-plan-title{
+    font-size: 1.25rem;
+}
+
+article.disabled > ul{
+    padding-left: 1.25rem;
+}
+
+article.disabled > ul > li.pricing-plan-feature-item{
+    list-style: disc;
+    line-height: 1.5;
+}
+
+.get-now{
+    text-decoration: underline;
 }
 
 /* MAIN */
