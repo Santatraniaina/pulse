@@ -161,11 +161,11 @@ a{
     font-weight: lighter;
 }
 
-.btn-primary{
+button.btn-primary{
     background-color: var(--green-2);
     padding: 1em 2em;
     font-size: 1.2rem;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--regular-dark);
     border: none;
     margin: 1rem auto;
@@ -210,6 +210,32 @@ article.disabled > ul > li.pricing-plan-feature-item{
 
 .get-now{
     text-decoration: underline;
+}
+
+article.secondary{
+    border-color: var(--regular-grey);
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+article.secondary > .card-header{
+    background-color: var(--regular-grey);
+    color: var(--regular-dark);
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    text-transform: none;
+    font-weight: normal;
+    padding: 2rem 3rem;
+    font-size: .85rem;
+}
+
+article.secondary > .card-body > .pricing-plan-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+article.secondary > .card-body > .pricing-plan-title > .price{
+    font-weight: 400;
 }
 
 /* MAIN */
