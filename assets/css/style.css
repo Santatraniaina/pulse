@@ -250,13 +250,14 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 /* MAIN */
 /* TESTIMONIAL */
 .testimonial{
-    width: 60%;
+    max-width: 60%;
     text-align: center;
-    margin: 0 auto;
+    margin: 3rem auto;
 }
 
 .testimonial > blockquote{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    quotes: "“" "”" "‘" "’";
 }
 
 .testimonial > cite{
@@ -441,6 +442,10 @@ article.secondary > .card-body > .pricing-plan-title > .price{
     article.disabled > ul > li.pricing-plan-feature-item{
         line-height: 1;
     }
+
+    .testimonial{
+        max-width: 85%;
+    }
 }
 
 
@@ -473,5 +478,9 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 
     .pricing-title > p{
         font-size: 1rem;
-    }   
+    }
+
+    .testimonial{
+        max-width: 100%;
+    }
 }
