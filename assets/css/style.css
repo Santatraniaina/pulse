@@ -184,14 +184,18 @@ button.btn-primary{
 
 .pricing-plan-features {
     text-align: left;
+    margin-left: 1rem;
 }
 
-.pricing-plan-feature-item.checked{
+.pricing-plan-feature-item{
     list-style: url('../icons/icon-check-bullet.svg');
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
 
+.btn-mobile{
+    display: none;
+}
 
 article.disabled{
     background-color: transparent;
@@ -387,11 +391,55 @@ article.secondary > .card-body > .pricing-plan-title > .price{
     .pricing-title{
         margin: 0;
         text-align: left;
-        width: 70%;
+        width: 100%;
     }
 
     .pricing-title > h1{
         padding: 0;
+    }
+
+    .pricing-plan{
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .pricing-plan > article{
+        max-width: 100%;
+    }
+    
+    .pricing-plan-card{
+        text-align: left;
+    }
+
+    .card-header{
+        text-align: center;
+    }
+
+    .pricing-plan-title{
+        font-size: 2rem;
+    }
+
+    .pricing-plan-title > .price{
+        display: inline-block;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .btn-mobile{
+        display: block;
+        width: 100%;
+    }
+
+    .pricing-plan-feature-item{
+        line-height: 1;
+    }
+    
+    article.disabled > ul > li.pricing-plan-feature-item{
+        line-height: 1;
     }
 }
 
@@ -411,6 +459,10 @@ article.secondary > .card-body > .pricing-plan-title > .price{
         display: none;
     }
 
+    .hamburger-menu{
+        display: flex;
+    }
+
     .pricing-title{
         width: 100%;
     }
@@ -421,29 +473,5 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 
     .pricing-title > p{
         font-size: 1rem;
-    }
-
-    .pricing-plan{
-        flex-direction: column;
-        /* align-items: center;
-        max-width: var(--width);
-        margin: 0 auto; */
-        gap: 2rem;
-    }
-
-    .pricing-plan > article{
-        max-width: 100%;
-    }
-    
-    .pricing-plan-card{
-        text-align: left;
-    }
-
-    .pricing-plan-title > .price{
-        display: inline-block;
-    }
-
-    .hamburger-menu{
-        display: flex;
-    }
+    }   
 }
