@@ -250,7 +250,11 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 /* MAIN */
 /* TESTIMONIAL */
 .testimonial{
+<<<<<<< HEAD
     max-width: 60%;
+=======
+    width: 85%;
+>>>>>>> 8a389f3be39c07a195c960cf8e823bcd83704999
     text-align: center;
     margin: 3rem auto;
 }
