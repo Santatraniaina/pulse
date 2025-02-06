@@ -333,7 +333,7 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 }
 
 .btn-regular-primary{
-    background-color: var(--green-3);
+    background: linear-gradient(90deg, var(--green-3) 20%, var(--green-2) 100%);
     padding: 1em 2em;
     font-weight: 600;
     display: inline-block;
