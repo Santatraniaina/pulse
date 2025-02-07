@@ -335,25 +335,33 @@ article.secondary > .card-body > .pricing-plan-title > .price{
     padding: 6rem 0;
 }
 
+.footer-left,
+.footer-right{
+    width: 50%;
+}
+
 .footer-left{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
 }
 
 .footer-logo{
     width: 10rem;
 }
 
-.footer-left > a{
-    display: block;
-}
+/* .footer-left > a{
+    display: inline-block;
+} */
 
 .btn-regular-primary{
     background: linear-gradient(90deg, var(--green-3) 20%, var(--green-2) 100%);
-    padding: 1em 2em;
+    padding: 1rem 2rem;
     font-weight: 600;
-    display: inline-block;
+    text-align: center;
+    max-width: 15rem;
+    /* display: inline-block; */
     transition: all .3s;
 }
 
@@ -364,15 +372,27 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 
 .footer-right{
     display: flex;
-    gap: 4rem;
+    justify-content: space-evenly;
+    margin-top: 0;
+}
+
+.footer-menu{
+    width: calc(100% / 3);
 }
 
 .footer-menu > h5{
     color: var(--regular-white);
+    font-size: 1.125rem;
+    margin: 0 0 1rem 0;
+}
+
+.footer-menu > ul > li{
+    margin-bottom: 1rem;
 }
 
 .footer-menu > ul > li > a{
     color: var(--green-2);
+    font-size: 1.125rem;
 }
 
 /* HAMBURGER MENU */
