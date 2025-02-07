@@ -307,6 +307,7 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 /* FOOTER */
 .footer{
     background-color: var(--regular-dark);
+    padding: 0 4rem;
 }
 
 .footer > .footer-content,
@@ -332,6 +333,7 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 .footer-content{
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     padding: 6rem 0;
 }
 
@@ -482,6 +484,27 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 
     .testimonial{
         max-width: 85%;
+    }
+
+    .faq,
+    .footer{
+        padding: 0 1.5rem;
+    }
+
+    .footer-content{
+        padding: 3rem 0;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer-left,
+    .footer-right{
+        width: 100%;
+    }
+
+    .footer-left{
+        align-items: center;
+        gap: 1rem;
     }
 }
 
