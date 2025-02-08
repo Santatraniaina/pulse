@@ -127,9 +127,9 @@ a{
     gap: 2rem;
 }
 
-.pricing-plan > article{
+/* .pricing-plan > article{
     max-width: calc((100vw / 3) - 2rem);
-}
+} */
 
 .pricing-plan-card{
     background-color: var(--regular-white);
@@ -171,11 +171,18 @@ a{
 button.btn-primary{
     background-color: var(--green-2);
     padding: 1em 2em;
-    font-size: 1.2rem;
-    font-weight: 900;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
     color: var(--regular-dark);
     border: none;
     margin: 1rem auto;
+}
+
+button.btn-primary:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .05s;
 }
 
 .features-title{
@@ -204,9 +211,10 @@ article.disabled{
     border: none;
     padding: 3rem 2rem;
     text-align: left;
+    width: 50%;
 }
 
-article.disabled > .pricing-plan-title{
+article.disabled > .pricing-plan-title{ 
     font-size: 1.25rem;
 }
 
@@ -216,7 +224,7 @@ article.disabled > ul{
 
 article.disabled > ul > li.pricing-plan-feature-item{
     list-style: disc;
-    line-height: 1.5;
+    margin-bottom: 0;
 }
 
 .get-now{
@@ -230,13 +238,13 @@ article.secondary{
 }
 
 article.secondary > .card-header{
-    background-color: var(--regular-grey);
+    background-color: #f2f3f3;
     color: var(--regular-dark);
     border-top-left-radius: 0%;
     border-top-right-radius: 0%;
     text-transform: none;
     font-weight: normal;
-    padding: 2rem 3rem;
+    padding: 1.5rem 2rem;
     font-size: .85rem;
 }
 
@@ -477,9 +485,13 @@ article.secondary > .card-body > .pricing-plan-title > .price{
     .pricing-plan-feature-item{
         line-height: 1;
     }
+
+    article.disabled{
+        width: auto;
+    }
     
     article.disabled > ul > li.pricing-plan-feature-item{
-        line-height: 1;
+        line-height: 1.5;
     }
 
     .testimonial{
@@ -530,6 +542,7 @@ article.secondary > .card-body > .pricing-plan-title > .price{
 
     .pricing-title{
         width: 100%;
+        padding-top: 2rem;
     }
 
     .pricing-title > h1{
