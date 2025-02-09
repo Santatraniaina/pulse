@@ -41,6 +41,7 @@ a{
 }
 
 /* HEADER */
+/* NAVBAR */
 .header{
     background-color: var(--green-1);
 }
@@ -87,6 +88,24 @@ a{
 .btn-outline-primary:hover{
     box-shadow: -5px 5px var(--green-3);
     transform: translate(5px, -5px);
+}
+
+/* MOBILE NAVBAR */
+.collapse-navbar{
+    display: none;
+    position: absolute;
+    inset: 5.5rem 0 0 0;
+    background-color: var(--green-1);
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    z-index: 100;
+}
+
+.collapse-navbar > .navbar-list{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* MAIN */
@@ -528,8 +547,12 @@ article.secondary > .card-body > .pricing-plan-title > .price{
         padding: 1rem 1.5rem;
     }
 
-    .navbar-list{
+    .navbar > .navbar-list{
         display: none;
+    }
+
+    .collapse-navbar{
+        display: block;
     }
 
     .hamburger-menu{
